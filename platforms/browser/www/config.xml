@@ -4,9 +4,10 @@
     <description>
         A blank PhoneGap app.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="sourav_dash@outlook.com" href="sourav_dash@outlook.com">
+        Sourav Kumar Dash
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <icon src="icon.png" />
 </widget>
