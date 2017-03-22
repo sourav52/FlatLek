@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-xs-12 col-md-offset-3 main-container">
+				<div class="logo">
+					<img src="images/logo.png" width="96" height="96">
+					<h1 class="app-name">
+						<span class="first-name">Fart</span>
+						<span class="middle-name">L</span>
+						<span class="sur-name">ek</span>
+					</h1>
+
+					<h4 class="tag-line">Make Your each day your masterpiece.</h4>
+				</div>
+
+				<div class="circle-container">
+					<div class="circle" id="timer">
+						<i class="fa fa-play icon" aria-hidden="true"></i>
+						<div class="visualizer hidden">
+							<div class="pipe" ></div>
+							<div class="pipe" ></div>
+							<div class="pipe" ></div>
+							<div class="pipe" ></div>
+							<div class="pipe" ></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="message">
+					<span id="sessionName">Session</span>  = <span id="sessionTimer">00:00</span>
+				</div>
+
+				<div class="stats-bar">
+				</div>
+			</div>
+		</div>
+	</div>
+	<audio id="bgAudio" src="audio/start.mp3" preload=""></audio>
+</body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/script.js"></script>
+</html>

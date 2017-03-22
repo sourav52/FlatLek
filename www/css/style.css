@@ -1,0 +1,145 @@
+.container-fluid{
+	  background: #89f7fe;
+	  background: -webkit-linear-gradient(left top,#89f7fe,#84adef); 
+	  background: -o-linear-gradient(left top,#89f7fe,#84adef); 
+	  background: -moz-linear-gradient(left top,#89f7fe,#84adef);
+	  background: linear-gradient(left top,#89f7fe,#84adef);
+	  height: 100%;
+	  width: 100%;
+	  position: absolute;
+}
+
+.main-container{
+	position: relative;
+	background: #3C4673;
+	color: #fff;
+	max-height: 100% !important;
+	height: auto;
+	height: 100vh !important;
+	overflow: hidden;
+	box-shadow: 6px 6px 5px rgba(60,75,115,0.5);
+	padding: 0px;
+}
+
+.stats-bar{
+	background: rgba(100,89,158,0.3);
+	background: -webkit-linear-gradient(top left,rgba(100,89,158,0.3),rgba(100,89,158,0.7)); 
+	background: -o-linear-gradient(top left,rgba(100,89,158,0.3),rgba(100,89,158,0.7)); 
+	background: -moz-linear-gradient(top left,rgba(100,89,158,0.3),rgba(100,89,158,0.7));
+	background: linear-gradient(top left,rgba(100,89,158,0.3),rgba(100,89,158,0.7));
+	position: fixed;
+	z-index: 100; 
+	bottom: 0; 
+	left: 0;
+	height: 40px;
+	width: 100%;
+	text-align: justify;
+}
+
+.logo{
+	margin-top: 30px;
+	width: 100%;
+}
+
+.logo img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.app-name{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+}
+
+.middle-name{
+  font-size: 46px;
+  background: -webkit-linear-gradient(right bottom,#70DCDC 40%,#59A0D5,#D0B3DF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4{
+	text-align: center;
+	color: red;
+}
+
+.circle-container{
+	margin-top: 70px;
+	width: 100%;
+}
+
+.circle{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background: #53CDDD;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	z-index: 9999;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 84px;
+	font-size: 25px;
+	cursor: pointer;
+	border: 8px solid rgba(25, 110, 121, 0.52);
+	border-top: 8px solid #4465c7;
+}
+
+.circle:hover{
+    -webkit-animation: customAnimation 3s cubic-bezier(.64,.88,1,-0.54) alternate,borderAnimation 3s ease-in infinite;
+    animation: customAnimation 3s cubic-bezier(.64,.88,1,-0.54) alternate,borderAnimation 3s ease-in infinite;
+}
+
+@keyframes customAnimation {
+    0% { transform: scale(2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes borderAnimation {
+    0% { 
+    	border-bottom-right-radius: 35%;
+    }
+
+    25%{
+    	border-top-left-radius: 35%;
+    }
+
+    50%{
+    	border-bottom-left-radius: 35%;	
+    }
+
+    100% {
+    	border-top-right-radius: 35%;
+    }
+}
+
+.visualizer{
+	height: 25px;
+	text-align: center;
+}
+
+.pipe{
+	position: relative;
+	width: 2px;
+	height: 26px;
+	background: -webkit-linear-gradient(top,#DC2424,#4A569D);
+	display: inline-block;
+	border-radius: 2px;
+  	transition: all 0.1s ease;
+}
+
+.message{
+	margin-top: 50px;
+	font-size: 35px;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+  	background: -webkit-linear-gradient(right bottom,#27A39A 40%,#80719B 80% ,#29C1A1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sessionName{
+	text-transform: uppercase !important;
+}
